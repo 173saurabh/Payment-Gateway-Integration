@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>Stripe Payment Demo</title> 
+<style>
+	body{
+		height: 100vh;
+		background: #000428;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	}
+	h3{
+		color: #fff;
+		text-align: center;
+	}
+	button{
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	margin-left: 680px;
+	margin-top: 60px;	
+
+}
+</style>
+
+</head> 
+
+<body> 
+	<h3>Welcome to Payment Gateway</h3> 
+
+	<form action="payment" method="POST"> 
+
+
+	<script
+		src="//checkout.stripe.com/v2/checkout.js"
+		class="stripe-button"
+		data-key="<%= key %>" 
+		data-amount="250000" 
+		data-currency="inr" 
+		data-name="Saurabh Singh" 
+		data-description="Donation to UNICEF" 
+		data-locale="auto" > 
+		</script> 
+	</form> 
+</body> 
+</html>
