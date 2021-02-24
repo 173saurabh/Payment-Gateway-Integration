@@ -42,7 +42,7 @@ app.post('/payment', function(req, res){
 	.then((customer) => { 
 
 		return stripe.charges.create({ 
-			amount: 250000,	 // Charing Rs 2500 
+			amount: 250000,	 // Charging Rs 2500 
 			description: 'Donation to Charity', 
 			currency: 'INR', 
 			customer: customer.id 
