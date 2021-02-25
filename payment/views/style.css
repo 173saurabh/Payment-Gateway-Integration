@@ -1,6 +1,6 @@
 body
 {
-    background-image: url('./galaxy2.jpg');
+    background-image: url('https://i.imgur.com/0bF1YT9.gif');
     background-size: cover;
     background-repeat:no-repeat;
 }
@@ -29,3 +29,35 @@ body
     padding:50px;
     color:#7084ff; 
 } 
+.mid
+{
+    display: flex;
+}
+.direction
+{
+    flex:45%;
+    justify-content: center;
+}
+.clickimg
+{
+    height:fit-content;
+    padding: 15px; 
+    float:right;
+}
+.card
+{
+    flex:55%;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    padding: 25px;
+}
+.card button
+{
+    background:rgba(150, 1, 13, 0.445);
+    color:white; 
+    height: 70px;
+    width: 150px;
+    border-radius: 20px;
+    border: 3px solid blue;
+}
