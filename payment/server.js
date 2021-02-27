@@ -30,7 +30,7 @@ app.post('/payment', function(req, res){
 	stripe.customers.create({ 
 		email: req.body.stripeEmail, 
 		source: req.body.stripeToken, 
-		name: 'Sounav Saha', 
+		name: 'Saurabh Singh', 
 		address: { 
 			line1: '219/1A Lake Gardens', 
 			postal_code: '700045', 
